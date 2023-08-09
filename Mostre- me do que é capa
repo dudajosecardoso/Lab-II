@@ -1,0 +1,23 @@
+## descobrir a média dos cinco números digitados pelo usuário
+
+list = []
+
+for x in range (5):
+    numbers = int(input("Digite o número: "))
+    list.append(numbers)
+
+def average():
+    total = 0
+    for n in list:
+        total = total + n
+        totals = total / 5
+    print(totals)
+    
+    return 
+    
+    
+def main():
+    print("A média dos números digitados é:")
+    average()
+    
+main()
