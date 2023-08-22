@@ -1,0 +1,39 @@
+
+matriz = [
+    [1,2,3],
+    [4,5,6],
+    [7,8,9],
+    
+]
+
+soma1 = 0 
+for element in matriz[0]:
+    soma1 += element
+
+
+soma2 = 0 
+for element in matriz[1]:
+    soma2 += element
+
+
+soma3 = 0 
+for element in matriz[2]:
+    soma3 += element
+
+
+soma_total = soma1 + soma2 + soma3
+
+
+media_total = soma_total / 9
+
+media_linha1 = soma1 / 3 
+
+media_linha2 = soma2 / 3 
+
+media_linha3 = soma3 / 3 
+
+
+print("média total:", media_total)
+print("média da linha um:", media_linha1)
+print("média da linha dois:", media_linha2)
+print("média da linha três:", media_linha3)
