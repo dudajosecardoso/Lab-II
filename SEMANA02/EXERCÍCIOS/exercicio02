@@ -1,0 +1,17 @@
+def processar_lista_duplicada(lista):
+    elementos_duplicados = []
+    elementos_unificados = []
+
+    for elemento in lista:
+        if lista.count(elemento) > 1 and elemento not in elementos_duplicados:
+            elementos_duplicados.append(elemento)
+        if elemento not in elementos_unificados:
+            elementos_unificados.append(elemento)
+
+    return elementos_duplicados, elementos_unificados
+
+lista = [1, 2, 2, 3, 3, 3, 4, 5, 5]
+duplicados, unificados = processar_lista_duplicada(lista)
+
+print("Elementos duplicados:", duplicados)
+print("Elementos unificados:", unificados)
