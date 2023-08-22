@@ -5,19 +5,19 @@ matriz = [
     
 ]
 
-numero1 = 0 
+numero1 = [0][0] 
 for element in matriz[0]:
     if element > numero1:
         numero1 = element
            
            
-numero2 = 0 
+numero2 = [0][0] 
 for element in matriz[1]:
     if element > numero2:
         numero2 = element
                       
            
-numero3 = 0 
+numero3 = [0][0] 
 for element in matriz[2]:
     if element > numero3:
         numero3 = element
