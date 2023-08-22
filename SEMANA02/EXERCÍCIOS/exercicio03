@@ -1,0 +1,31 @@
+matriz = [
+    [1,2,3],
+    [4,5,6],
+    [7,8,9],
+    
+]
+
+numero1 = 0 
+for element in matriz[0]:
+    if element > numero1:
+        numero1 = element
+           
+           
+numero2 = 0 
+for element in matriz[1]:
+    if element > numero2:
+        numero2 = element
+                      
+           
+numero3 = 0 
+for element in matriz[2]:
+    if element > numero3:
+        numero3 = element
+                      
+           
+print("maior n° da primeira linha", numero1)
+print("maior n° da segunda liha", numero2)
+print("maior n° da terceira linha", numero3)
+
+soma_maiores_valores = numero1 + numero2 + numero3
+print("a soma dos maiores valores é", soma_maiores_valores)
