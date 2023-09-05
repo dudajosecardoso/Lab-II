@@ -1,0 +1,21 @@
+def main():
+    semana = {}
+    dias_semana = (
+        "domingo",
+        'segunda',
+        "terça",
+        "quarta",
+        "quinta",
+        'sexta',
+        'sabádo'
+        )
+        
+    for dias in dias_semana:
+        aula = input(f'qual aula vc tem na {dias}? ')
+        semana[dias] = aula
+    
+    print("\n #AULAS DA SEMANA")
+    for key in semana:
+        print(f'\t> {key} : {semana[key]}')
+    
+main()
