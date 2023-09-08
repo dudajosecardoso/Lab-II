@@ -1,1 +1,38 @@
-
+def menu():
+    print("\t Menu Principal")
+    print("1. Adicionar um produto")
+    print("2. Buscar um produto")
+    print("3. Visualizar todos os produtos")
+    print("4 .Vender um produto")
+    print("5. Relatório de vendas")
+    print("6. Sair")
+    
+    option = int(input("\n Digite a opção que deseja executar: "))
+    
+    return option
+    
+    
+    
+def main():
+    while True:
+        option = menu()
+        
+        if option == 1:
+            print("a")
+        elif option == 2:
+            print("b")
+        elif option == 3:
+            print("c")
+        elif option == 4:
+            print("d")
+        elif option == 5:
+            print("e")
+        elif option == 6:
+            print("f")
+            break
+        
+        else:
+            print("Opção invalida. Tente novamente")
+            
+    
+main()
