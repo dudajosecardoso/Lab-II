@@ -11,14 +11,24 @@ def menu():
     
     return option
     
+def add_product(estoque):
+    name = input('> Digite o nome do produto: ')
+
+    estoque[name] = []
     
+    print(estoque)
+
     
 def main():
+    
+    estoque = {"Lampada": {"amount" : 5, "price": 7.5}}
+ 
+    
     while True:
         option = menu()
         
         if option == 1:
-            print("a")
+            add_product(estoque)
         elif option == 2:
             print("b")
         elif option == 3:
