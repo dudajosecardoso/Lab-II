@@ -11,26 +11,41 @@ def menu():
     
     return option
     
-def add_product(estoque):
-    name = input('> Digite o nome do produto: ')
-
-    estoque[name] = []
+def add_product(stock):
     
-    print(estoque)
+    nome_produto = input("Digite o nome do produto: ")
+    
+    amount = int(input("Digite a quantidade: "))
+    price = float(input("Digite o preço: "))
+    
+    stock[nome_produto] = {"amount": amount, "price": price}
+
+    print(stock)
+
+def find_product(stock):
+    product = input("Digite o nome do produto: ")
+
+    if product in stock:
+        quantidade = stock[product]["amount"]
+        preco = stock[product]["price"]
+        print(f"Quantidade de {product}: {quantidade}")
+        print(f"Preço de {product}: {preco}")
+    else:
+        print(f"{product} não encontrado no estoque.")
 
     
 def main():
     
-    estoque = {"Lampada": {"amount" : 5, "price": 7.5}}
+    stock = {"Lampada": {"amount" : 5, "price": 7.5}}
  
     
     while True:
         option = menu()
         
         if option == 1:
-            add_product(estoque)
+            add_product(stock)
         elif option == 2:
-            print("b")
+            find_product(stock)
         elif option == 3:
             print("c")
         elif option == 4:
@@ -43,6 +58,5 @@ def main():
         
         else:
             print("Opção invalida. Tente novamente")
-            
-    
+                
 main()
