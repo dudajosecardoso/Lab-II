@@ -18,7 +18,11 @@ def add_product(stock):
     amount = int(input("Digite a quantidade: "))
     price = float(input("Digite o preço: "))
     
-    stock[name_product] = {"amount": amount, "price": price}
+    if name_product in stock:
+        stock[name_product]["amount"] += amount
+        
+    else: 
+        stock[name_product] = {"amount": amount, "price": price}
     
     print()
 
