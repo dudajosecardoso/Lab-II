@@ -87,7 +87,7 @@ def sales_report(sales):
 
 def main():
     
-    stock = {"Lampada": {"amount" : 5, "price": 7.5}}
+    stock = {"lampada": {"amount" : 5, "price": 7.5}}
     sales = {}
     
     while True:
