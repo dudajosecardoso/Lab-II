@@ -1,3 +1,5 @@
+## caso você tenha mais de uma aula por dia, sugiro que coloque seus valores dentro de uma lista, mas como eu não tenho não fiz isso.
+
 week = {
     "segunda" : "FOIL 2",
     "terça" : "LAB II",
@@ -6,8 +8,6 @@ week = {
     "sexta" : " ",
     "sabado" : "Organização e arquitetura de computadores"
 }
-
-## caso você tenha mais de uma aula por dia, sugiro que coloque seus valores dentro de uma lista, mas como eu não tenho não fiz isso.
 
 for k,v in week.items():
     print(f"No(a) {k} eu tenho a disciplina de {v}")
