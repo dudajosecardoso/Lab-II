@@ -1,1 +1,6 @@
+my_dict = { "Marion" : "red", "Guilherme" : "blue", "Gustavo" : "green", "Eduardo" : "black", "Bianca" : "white"}
 
+for k,v in my_dict.items():
+    print(f"{k} esta usando uma camisa da cor {v}")
+    
+### eu manjo dos inglês B)
