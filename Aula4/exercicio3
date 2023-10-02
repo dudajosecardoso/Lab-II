@@ -1,1 +1,29 @@
+movies = {
+    "O Rei Leão": {
+        "vilão": "Scar",
+        "ano de lançamento": 1994
+    },
+    "A Pequena Sereia": {
+        "vilão": "Úrsula",
+        "ano de lançamento": 1989
+    },
+    "A Bela e a Fera": {
+        "vilão": "Gaston",
+        "ano de lançamento": 1991
+    },
+    "Aladdin": {
+        "vilão": "Jafar",
+        "ano de lançamento": 1992
+    },
+    "Mulan": {
+        "vilão": " Shan Yu",
+        "ano de lançamento": 1998
+    }
+}
+
+for movie, info in movies.items():
+    print(f"Filme: {movie}")
+    print(f"Vilão: {info['vilão']}")
+    print(f"Ano de lançamento: {info['ano de lançamento']}")
+    print()
 
