@@ -1,1 +1,28 @@
+def gerar_cartela():
+    import random  
+    
+    cartela = []
 
+    
+    for _ in range(5):
+        linha = [0] * 5
+        cartela.append(linha)
+
+   
+    for i in range(5):
+        for j in range(5):
+            numero = random.randint(0, 99)
+            while numero in cartela[i]:
+                numero = random.randint(0, 99)
+            cartela[i][j] = numero
+
+    return cartela
+
+def exibir_cartela(cartela):
+    for linha in cartela:
+        print(linha)
+
+def main():
+    cartela = gerar_cartela()
+    exibir_cartela(cartela)
+main()
