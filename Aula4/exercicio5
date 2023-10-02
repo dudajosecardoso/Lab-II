@@ -1,1 +1,19 @@
+def count_vowels(text):
+    vowel_count = {'a': 0, 'e': 0, 'i': 0, 'o': 0, 'u': 0}
 
+    text = text.lower()
+
+    for letter in text:
+        if letter in vowel_count:
+           
+            vowel_count[letter] += 1
+
+    return vowel_count
+
+def main():
+    text = input("Digite seu texto: ")
+    result =  count_vowels(text)
+    
+    for vowel, score in result.items():
+        print(f"{vowel}: {score}")
+main()
