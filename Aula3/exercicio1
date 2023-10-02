@@ -6,13 +6,13 @@ def generate_card():
     
     for _ in range(5):
         line = [0] * 5
-        card.append(linha)
+        card.append(line)
 
    
     for i in range(5):
         for j in range(5):
             number = random.randint(0, 99)
-            while number in cartela[i]:
+            while number in card[i]:
                 number = random.randint(0, 99)
             card[i][j] = number
 
@@ -25,4 +25,5 @@ def display_card(card):
 def main():
     card = generate_card()
     display_card(card)
+    
 main()
