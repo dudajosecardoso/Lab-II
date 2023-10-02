@@ -1,1 +1,11 @@
+week = {
+    "segunda" : "FOIL 2",
+    "terça" : "LAB II",
+    "quarta" : " ",
+    "quinta" : "Probabilidade e estatística",
+    "sexta" : " ",
+    "sabado" : "Organização e arquitetura de computadores"
+}
 
+for k,v in week.items():
+    print(f"No(a) {k} eu tenho a disciplina de {v}")
