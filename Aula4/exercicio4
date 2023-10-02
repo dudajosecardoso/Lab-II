@@ -1,1 +1,16 @@
+def checking_name(my_dict):
+    search = input("Digite o nome da chave que está procurando: ")
+        
+    if search in my_dict:
+        print(f"verdadeiro, {search} esta no dicionário")
+            
+    else:
+        print(f"falso, {search} não esta no dicionário.")
 
+
+def main():
+    my_dict = {"name" : "Eduarda" , "idade" : 18 , "sexo" : "feminino"} 
+    
+    checking_name(my_dict)
+    
+main()
