@@ -26,4 +26,3 @@ for movie, info in movies.items():
     print(f"Vilão: {info['vilão']}")
     print(f"Ano de lançamento: {info['ano de lançamento']}")
     print()
-
