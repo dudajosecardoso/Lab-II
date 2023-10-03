@@ -1,1 +1,39 @@
+def verify_change(saque):
+    count100 = 0
+    count50 = 0
+    count20 = 0
+    count10 = 0
+    while saque >= 100:
+        count100 += 1
+        saque -= 100
+    while saque >= 50:
+        count50 += 1
+        saque -= 50
+    while saque >= 20:
+        count20 += 1
+        saque -= 20
+    while saque >= 10:
+        count10 += 1
+        saque -= 10
+    return count100, count50, count20, count10
 
+def main():
+    saque = float(input("Enter the withdrawal amount: "))
+    
+    while saque % 10 != 0:
+        print("The withdrawal amount must be a multiple of 10.")
+        saque = float(input("Enter the withdrawal amount: "))
+    
+    count100, count50, count20, count10 = verify_change(saque)
+    
+    print(f"Withdrawal amount: R$ {saque:.2f} - Expected result:")
+    if count100 > 0:
+        print(f"{count100} note(s) of R$100.00")
+    if count50 > 0:
+        print(f"{count50} note(s) of R$50.00")
+    if count20 > 0:
+        print(f"{count20} note(s) of R$20.00")
+    if count10 > 0:
+        print(f"{count10} note(s) of R$10.00")
+
+main()
