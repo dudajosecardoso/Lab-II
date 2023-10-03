@@ -4,17 +4,17 @@ def calculate_average(scores):
 student_scores = {}
 
 while True:
-    name = input("Enter the student's name (or leave blank to exit): ")
+    name = input("Digite o nome do aluno (ou espaço em branco para sair): ")
 
     if name == "":
         break
 
-    score1 = float(input("Enter the student's first score: "))
-    score2 = float(input("Enter the student's second score: "))
+    score1 = float(input("Digite a primeira nota: "))
+    score2 = float(input("Digite a segunda nota: "))
 
     student_scores[name] = [score1, score2]
 
-student_name = input("Enter the student's name to calculate the average: ")
+student_name = input("Digite o nome do aluno para ver a média: ")
 
 if student_name in student_scores:
     average = calculate_average(student_scores[student_name])
