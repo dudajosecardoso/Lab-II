@@ -1,16 +1,19 @@
 def count_elements(lst):
     result = {}
     
-    for number in lst:
-        if number in result:
-            result[number] += 1
+    for n in lst:
+        if n in result:
+            result[n] += 1
         else:
-            result[number] = 1
+            result[n] = 1
     
     return result
 
 def main():
-    lst = [1, 2, 3, 4, 5, 4, 3]
+    lst = [ ]
+    for x in range(5):
+        number = int(input("Digite um número inteiro: ")
+        lst.append(number)
     result = count_elements(lst)
     print(result)
 main()
