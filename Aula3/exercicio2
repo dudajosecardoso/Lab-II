@@ -1,1 +1,21 @@
-
+def sum_diagonal(matrix):
+    n = len(matrix)
+    total_sum = 0
+    
+    for i in range(n):
+        for j in range(i):
+            total_sum += matrix[i][j]
+            
+    return total_sum
+    
+def main():
+    matrix = [
+        [9,8,7],
+        [6,5,4],
+        [3,2,1]
+    ]
+    
+    result = sum_diagonal(matrix)
+    print("The sum of the elements below the main diagonal is:", result)
+    
+main()
