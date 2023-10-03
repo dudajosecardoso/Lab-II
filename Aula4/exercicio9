@@ -1,1 +1,18 @@
+students = {}
 
+while True:
+    name = input("Digite o nome do aluno (ou 'oooo' para sair) : ")
+
+    if name == 'oooo':
+        break
+
+    grade = float(input("Digite a nota do aluno: "))
+
+    students[name] = grade
+
+if len(students) > 0:
+    student_highest_grade = max(students, key=students.get)
+    highest_grade = students[student_highest_grade]
+    print(f"O aluno com a maior nota é {student_highest_grade} que possui {highest_grade}")
+else:
+    print("Nenhum aluno inserido.")
