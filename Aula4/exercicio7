@@ -1,1 +1,16 @@
+def count_elements(lst):
+    result = {}
+    
+    for number in lst:
+        if number in result:
+            result[number] += 1
+        else:
+            result[number] = 1
+    
+    return result
 
+def main():
+    lst = [1, 2, 3, 4, 5, 4, 3]
+    result = count_elements(lst)
+    print(result)
+main()
