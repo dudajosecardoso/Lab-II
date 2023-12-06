@@ -1,6 +1,6 @@
 ## Crie um programa que receba através de input dois números e retorne sua divisão
 
-def division_numbers():
+def division():
     while True:
         try:
             n1 = int(input("Digite o numerador: "))
@@ -21,5 +21,5 @@ def division_numbers():
         break
         
 def main():
-    division_numbers()
+    division()
 main()
