@@ -1,42 +1,25 @@
-def division(val1,val2):
-    try:
-        return val1/val2
-    except ZeroDivisionError:
-        print(f"[Erro] Você não pode dividir um número por zero!")
-        raise
-    except BaseExecpition as error:
-        print(f"[Erro] ocorreu um erro: {error}")
-        
-def input_int(message, canBeZero = True):
-    while True: 
-        value= int(input(message))
-        
-        if not canBeZero and value == 0:
-            raise ValueError()
-        return value
-    except ValueError:
-        print("[Erro] número informado inválido!")
-    except BaseExecpition as error:
-        print(f"[Erro] ocorreu um erro: {error}")
-    finally:
-        print("[finally]")
+## Crie um programa que receba através de input dois números e retorne sua divisão
 
+def division_numbers():
+    while True:
+        try:
+            n1 = int(input("Digite o numerador: "))
+            n2 = int(input("Digite o denominador: "))
+            result = n1 / n2
+        except (ValueError, TypeError):
+            print("Tivemos um problema com os tipos de dados que você digitou, tente novamente!")
+            print()
+            continue
+        except ZeroDivisionError:
+            print("Não é possível dividir um número por zero! tente novamente!")
+            print()
+            continue
+        except KeyboardInterrupt:
+            print("O usuário preferiu não informar os dados!")
+        else:
+            print(f"o resultado é {result}")
+        break
+        
 def main():
-    try:
-        n1= input_int("Digite o primeiro valor")
-        n2= input_int("Digite o segundo valor", canBeZero = False)
-    
-    result = division(n1,n2)
-    
-        print(f"resultado: {result}")
-    except ValueError:
-        print("[Erro] número informado inválido!")
-    except BaseExecpition as error:
-        print(f"[Erro] ocorreu um erro: {error}")
-    else: 
-        print(" obrigado ")
-    
+    division_numbers()
 main()
-
-#try and except usados para tratamento de erros (raise pra passar a excessão para adiante)
-
