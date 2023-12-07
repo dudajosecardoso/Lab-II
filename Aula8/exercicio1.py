@@ -1,5 +1,3 @@
-## Crie um programa que receba através de input dois números e retorne sua divisão
-
 def division():
     while True:
         try:
