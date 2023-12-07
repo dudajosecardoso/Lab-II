@@ -16,6 +16,5 @@ def main():
         
     except BaseException as error:
         print('[Error] Aconteceu um erro', error)
-    
-    
+        
 main()
