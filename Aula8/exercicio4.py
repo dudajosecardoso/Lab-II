@@ -1,6 +1,6 @@
 import math
 
-def combinacoes(n, m):
+def combinations(n, m):
     if n < m or n < 0 or m < 0:
         return 0
     else:
@@ -12,13 +12,13 @@ def main():
             n = int(input("Digite o número total de alunos (N): "))
             m = int(input("Digite o número de alunos em um dos grupos (M): "))
     
-            resultado = combinacoes(n, m)
+            result = combinations(n, m)
     
         except ValueError:
             print("Por favor, digite números inteiros.")
             continue
         else:
-           print(f"O número de combinações possíveis é: {resultado}")
+           print(f"O número de combinações possíveis é: {result}")
         break
 
 main()
