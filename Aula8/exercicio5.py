@@ -1,4 +1,3 @@
-# Utilizando dicionários, crie um programa que simule um caixa eletrônico. O usuário poderá optar pelas seguintes funcionalidades:
 import os
 import time
 
